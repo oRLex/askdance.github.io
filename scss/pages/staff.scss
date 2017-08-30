@@ -1,0 +1,148 @@
+// global styles
+@import "../global";
+
+// home page style
+ header {
+    padding-top: 4rem;
+
+    @media (max-width: $screen-md){
+      padding-top: 2rem;
+    }
+  }
+.hero {
+  .logo-name {
+    a{
+      font-family: $fontBase;
+      font-size: 6.5rem;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.6s;
+       @media (max-width: $screen-md){
+        font-size: 2.8rem;
+       }
+     &:hover{
+      color: $prime;
+     }
+    }
+  }
+  .description{
+      font-family: $fontBase;
+      font-size: 2rem;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      padding-bottom: 4rem;
+       @media (max-width: $screen-md){
+        font-size: 1.2rem;
+        padding-bottom: 0.1rem;
+       }
+  }
+
+  .hamburger {
+    color: #fff;
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+    width: 100%;
+
+    @media (max-width: $screen-sm){
+      display: block;
+      padding-top: 4rem;
+    }
+  }
+  .hero-nav {
+    display: block;
+   
+    @media (max-width: $screen-sm){
+      display: block;
+    }
+  }
+
+  .hero-nav-item {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    border-right: 0.1rem solid black;
+      &:last-child{
+      border-right: 0;
+      } 
+      &:hover{
+        color: $prime;
+      }
+    @media (max-width: $screen-sm){
+      display: block !important;
+      background-color: #e0dcdc;
+      border-right: 0;
+        &:hover{
+          color: #a1a1a1;     
+        }
+    }
+  }
+}
+//end home page style
+
+.coaches{
+  h1{
+    color: $prime;
+  }
+  .mb1{
+    padding-top: 3rem;
+  }
+}
+
+//footer
+.some-information{
+  padding-bottom: 5rem;
+  a{
+    color: #333333;
+    transition: 0.5s;
+    &:hover{
+      color: $prime;
+    }
+  }
+  .social-icon{
+      padding-right: 1rem;
+      padding-left: 1rem;
+      border-right: 0.1rem solid black;
+      transition: 0.5s;
+      &:last-child{
+      border-right: 0;
+      } 
+      &:hover{
+        color: $prime;
+      }
+  }
+   @media (max-width: $screen-md){
+    padding-bottom: 2rem;
+      .fa{
+        font-size: 1.5rem;
+      }
+      p{
+        font-size: 1.3rem;
+      }
+      a{
+        font-size: 1.3rem;
+      }
+      .links{
+        padding-top: 2rem;
+        text-align: center;
+      }
+    }
+}
+
+.bg-footer{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #af9aae;
+  width: 100%;
+  a{
+    transition: 0.5s;
+    &:hover{
+      color: #000;
+    }
+  }
+}
+//end footer
